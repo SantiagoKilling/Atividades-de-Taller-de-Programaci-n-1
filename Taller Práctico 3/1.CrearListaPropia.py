@@ -8,3 +8,4 @@ ListaHobbies = ["Tocar guitarra", "Hacer Ejercicio", "Componer música", "Jugar 
 print("Lista completa de hobbies:", ListaHobbies)
 print("Primer hobby:", ListaHobbies[0])
 print("Último hobby:", ListaHobbies[-1])
+
