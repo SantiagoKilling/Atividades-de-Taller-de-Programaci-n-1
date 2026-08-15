@@ -8,14 +8,20 @@ error.
 # Solicitar al usuario que ponga una nota dentro de un rango comprendido
 
 # Inicializar el programa con un dato inválido para que comience el bucle
-dato_invalido = -1
+dato_valido = False
 
-while not (0 <= dato_invalido <= 10):
-    nota_usaurio = int(input("Ingrese una nota del 0 a 10 : "))
+while not dato_valido:
+    dato_entrada = input("Ingrese una nota del 0 a 10 : ")
 
-	# Verificamos si la entrada es un dato numérico
-    if nota_usaurio.isdigit():
-        edad = int(nota_usaurio)
+	# Verificamos si la entrada es un dato numérico usando is.digit()
+    if dato_entrada.isdigit():
+        nota = int(dato_entrada)
+
+        # Validar el rango en el que vamos a estar operando
+        if 0 <= nota <= 10:
+           dato_valido = True
+        else:
+            print("Error : un número dentro del rango comprendido (entre 0 y 10) : ")
     else:
-        print("Error : un número dentro del rango comprendido")
-print(f"numero validado correctamente: ")
+        print("Error : Debe ingresar un número válido sin letras...")
+print(f"numero validado correctamente: {nota}")
