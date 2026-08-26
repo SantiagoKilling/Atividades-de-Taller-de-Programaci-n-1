@@ -5,3 +5,9 @@
 ○​ Llama a la función con tu nombre y guarda el resultado en una variable.
 Luego, imprime esa variable.
 """
+nombre = "Santiago"
+
+def saludarUsuario():
+    return print(f"Hola, {nombre}, bienvenido al taller de Programación 1!")
+
+saludarUsuario()

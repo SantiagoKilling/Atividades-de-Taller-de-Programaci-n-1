@@ -6,3 +6,19 @@
 ○​ Llama a la función con una nota de 4 y otra de 9, e imprime los resultados
     booleanos (True/False).
 """
+
+
+
+nota_de_corte = 7
+
+def verificar_aprobacion(nota_usuario, nota_de_corte):
+    if nota_usuario >= nota_de_corte:
+        return True
+    else:
+        return False
+
+nota_usuario = int(input("Introduzca su nota : "))
+
+validador = verificar_aprobacion(nota_usuario, nota_de_corte)
+
+print(f"¿El estudiante fue aprobado? : {validador}")
